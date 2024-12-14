@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC Application</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a class="logo" href="/">MVC App</a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Teacher">Teachers</a></li>
+                <li><a href="/Student">Students</a></li>
+                <li><a href="/Event">Events</a></li>
+                <li><a href="/Account/Login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <footer>
+        <p>&copy; 2024 - Custom MVC App | <a href="/Home/Privacy">Privacy</a></p>
+    </footer>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
